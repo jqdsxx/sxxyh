@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>零票通Ai · 企业合同全生命周期管理平台</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+  <!-- ===== 导航栏 ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <rect width="36" height="36" rx="10" fill="url(#logoGrad)"/>
+          <path d="M9 11h18M9 18h12M9 25h14" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="26" cy="25" r="5" fill="white" opacity=".95"/>
+          <path d="M24 25l1.5 1.5L28 23" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="36" y2="36">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="100%" stop-color="#1d4ed8"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-name">零票通Ai</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">核心功能</a></li>
+        <li><a href="#highlights">产品亮点</a></li>
+        <li><a href="#miniapp">小程序</a></li>
+        <li><a href="#stats">数据</a></li>
+        <li><a href="#pricing">方案</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn-demo">立即体验 →</a>
+        <a href="#contact" class="btn-cta-nav">免费试用</a>
+      </div>
+      <button class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#features">核心功能</a>
+      <a href="#highlights">产品亮点</a>
+      <a href="#miniapp">小程序</a>
+      <a href="#stats">数据</a>
+      <a href="#pricing">方案</a>
+      <a href="#contact">立即体验</a>
+    </div>
+  </nav>
+
+  <!-- ===== Hero 区域 ===== -->
+  <section class="hero" id="home">
+    <!-- 星空背景 -->
+    <div class="hero-bg">
+      <canvas id="starCanvas"></canvas>
+      <div class="hero-gradient"></div>
+      <div class="hero-mountain"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="hero-brand">零票通Ai</span>
+          <span class="hero-main">企业合同全生命周期<br>智能管理平台</span>
+        </h1>
+        <p class="hero-subtitle">
+          短信智能识别 · 邮件自动关联 · 小程序随时查看
+        </p>
+        <p class="hero-desc">
+          零票通Ai专注于企业合同管理领域，通过强大的AI自动化能力，将汇款短信自动匹配合同入账、发票邮件智能关联合同记录，覆盖从合同录入到资金回款、发票管理到数据分析的全流程，让合同管理更高效、更合规、更省心。
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-hero-primary">免费试用</a>
+          <a href="#features" class="btn-hero-outline">了解更多功能</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><span class="trust-num">500+</span><span class="trust-label">企业用户</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span class="trust-num">12万+</span><span class="trust-label">合同管理</span></div>
+          <div class="trust-divider"></div>
+          <div class="trust-item"><span class="trust-num">99.9%</span><span class="trust-label">数据准确率</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- 滚动指示 -->
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>向下滚动</span>
+    </div>
+  </section>
+
+  <!-- ===== 核心功能 ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">核心功能</div>
+        <h2 class="section-title">覆盖合同管理全流程</h2>
+        <p class="section-desc">从合同录入到归档，每一个环节都经过精心设计，让合同管理更简单、更高效</p>
+      </div>
+
+      <div class="features-grid">
+
+        <!-- 合同管理 -->
+        <div class="feature-card primary-card">
+          <div class="feature-card-bg"></div>
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+              <rect width="48" height="48" rx="14" fill="#2563eb"/>
+              <path d="M14 14h20M14 22h14M14 30h16" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="28" y="26" width="12" height="12" rx="4" fill="white" opacity=".3"/>
+              <path d="M31 32l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>合同批量录入与管理</h3>
+          <p>支持手动录入、Excel模板批量导入、PDF扫描识别三种录入方式。合同全生命周期跟踪管理：草稿 → 执行中 → 完结/终止 → 归档，每个状态变更均留存操作记录。</p>
+          <ul class="feature-list">
+            <li>PDF / Word 合同扫描自动识别字段</li>
+            <li>合同变更、完结、终止、解除全流程</li>
+            <li>多维度筛选：类型、状态、日期、客户</li>
+            <li>删除保护：有关联资金/发票时禁止删除</li>
+          </ul>
+          <div class="feature-tag">核心模块</div>
+        </div>
+
+        <!-- 客户管理 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+              <rect width="48" height="48" rx="14" fill="#eff6ff"/>
+              <path d="M24 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" fill="#2563eb"/>
+              <path d="M12 38c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="36" cy="20" r="4" fill="#93c5fd"/>
+              <path d="M40 30c0-2.21-1.79-4-4-4" stroke="#93c5fd" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>客户档案管理</h3>
+          <p>系统根据合同内容自动提取并回填客户信息，统一管理甲方、乙方客户档案，支持快速查询和关联合同跳转。</p>
+          <ul class="feature-list">
+            <li>合同识别后自动创建/更新客户档案</li>
+            <li>完整信息：纳税号、联系人、开户行账号</li>
+            <li>多字段搜索：名称/联系人/电话/账号</li>
+            <li>关联合同一键跳转查看</li>
+          </ul>
+        </div>
+
+        <!-- 资金管理 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+              <rect width="48" height="48" rx="14" fill="#f0fdf4"/>
+              <circle cx="24" cy="24" r="12" stroke="#16a34a" stroke-width="2.5"/>
+              <path d="M24 16v16M20 20h6a2 2 0 0 1 0 4h-4a2 2 0 0 0 0 4h6" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>合同资金管理</h3>
+          <p>精细化管理合同每笔款项，支持首笔款、进度款、尾款、质保金等多种款项性质，自动统计回款情况，及时预警逾期。</p>
+          <ul class="feature-list">
+            <li>款项性质分类：首笔/进度/尾款/质保金</li>
+            <li>多账户管理：银行简称+账户后四位</li>
+            <li>单条/Excel批量导入</li>
+            <li>逾期预警 · 未回款自动提醒</li>
+          </ul>
+        </div>
+
+        <!-- 发票管理 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+              <rect width="48" height="48" rx="14" fill="#fffbeb"/>
+              <path d="M30 10H18a4 4 0 0 0-4 4v20a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V14a4 4 0 0 0-4-4z" stroke="#d97706" stroke-width="2.5"/>
+              <path d="M20 20h8M20 25h6M20 30h4" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>发票管理</h3>
+          <p>支持进项/销项发票分类管理，手动上传或邮件自动导入，系统自动读取发票信息并关联对应合同，消除人工对账工作量。</p>
+          <ul class="feature-list">
+            <li>PDF / XML 发票自动识别关键字段</li>
+            <li>进销项自动分类，关联合同自动匹配</li>
+            <li>付款状态追踪：已付 / 未付</li>
+            <li>申请开票工作流，审批留存记录</li>
+          </ul>
+        </div>
+
+        <!-- 短信识别 -->
+        <div class="feature-card highlight-card">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+              <rect width="48" height="48" rx="14" fill="#f0f9ff"/>
+              <rect x="10" y="14" width="28" height="20" rx="4" stroke="#0ea5e9" stroke-width="2.5"/>
+              <path d="M10 20l14 8 14-8" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="36" cy="34" r="8" fill="#0ea5e9"/>
+              <path d="M33 34l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="new-badge">智能特性</div>
+          <h3>短信自动识别收款</h3>
+          <p>系统自动读取银行汇款短信，智能解析<strong>付款方信息、金额、时间</strong>，结合企业信息与合同数据，自动匹配对应合同款项，完成资金入账记录。</p>
+          <ul class="feature-list">
+            <li>银行短信实时解析，零人工干预</li>
+            <li>多银行账户统一处理</li>
+            <li>无法匹配时自动提醒管理员确认</li>
+            <li>资金与发票双向交叉验证</li>
+          </ul>
+        </div>
+
+        <!-- 邮件自动关联 -->
+        <div class="feature-card highlight-card">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+              <rect width="48" height="48" rx="14" fill="#fdf4ff"/>
+              <path d="M12 16h24l-12 9-12-9z" fill="#9333ea" opacity=".3"/>
+              <rect x="10" y="14" width="28" height="20" rx="3" stroke="#9333ea" stroke-width="2.5"/>
+              <path d="M10 20l14 9 14-9" stroke="#9333ea" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 10l4 4-4 4M36 14H28" stroke="#9333ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="new-badge purple">智能特性</div>
+          <h3>邮件自动关联发票</h3>
+          <p>授权邮箱后，系统自动扫描收到的发票邮件，提取发票附件中的<strong>开票信息、金额、税率</strong>，并根据企业信息自动关联对应合同应开票记录。</p>
+          <ul class="feature-list">
+            <li>邮箱授权后全自动化处理</li>
+            <li>支持增值税专票、普票多种类型</li>
+            <li>不唯一时推送确认通知至管理员</li>
+            <li>与资金管理联动，自动标记付款状态</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 产品亮点 ===== -->
+  <section class="highlights" id="highlights">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">产品亮点</div>
+        <h2 class="section-title">为什么选择 零票通Ai</h2>
+        <p class="section-desc">告别繁琐的人工操作，让AI和自动化替你做重复工作</p>
+      </div>
+
+      <div class="highlights-layout">
+        <div class="highlights-left">
+          <div class="hl-item" id="hl-0" onclick="setHighlight(0)">
+            <div class="hl-num">01</div>
+            <div class="hl-content">
+              <h4>智能录入，三种方式任选</h4>
+              <p>手动录入、Excel模板批量导入、PDF扫描OCR识别——VIP版本更可接入企业系统自动同步合同数据。</p>
+            </div>
+            <div class="hl-arrow">→</div>
+          </div>
+          <div class="hl-item" id="hl-1" onclick="setHighlight(1)">
+            <div class="hl-num">02</div>
+            <div class="hl-content">
+              <h4>全局看板，数据一目了然</h4>
+              <p>首页总览展示合同统计、回款进度、开票情况、可视化图表；滚动提醒确保关键节点不遗漏。</p>
+            </div>
+            <div class="hl-arrow">→</div>
+          </div>
+          <div class="hl-item active" id="hl-2" onclick="setHighlight(2)">
+            <div class="hl-num">03</div>
+            <div class="hl-content">
+              <h4>短信+邮件双引擎自动化</h4>
+              <p>汇款短信自动识别收款、发票邮件自动关联合同，两大AI能力将财务对账效率提升80%。</p>
+            </div>
+            <div class="hl-arrow">→</div>
+          </div>
+          <div class="hl-item" id="hl-3" onclick="setHighlight(3)">
+            <div class="hl-num">04</div>
+            <div class="hl-content">
+              <h4>报表统计，辅助企业决策</h4>
+              <p>按月/季度/年度生成销售合同、采购合同、客户档案多维度报表，支持导出，只读安全可控。</p>
+            </div>
+            <div class="hl-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="highlights-right">
+          <div class="hl-visual" id="hlVisual">
+            <!-- 动态内容区 -->
+            <div class="hl-panel active" data-idx="0">
+              <div class="hl-panel-icon" style="background:#eff6ff">
+                <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
+                  <path d="M20 16h24M20 26h16M20 36h20" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+                  <rect x="10" y="8" width="44" height="48" rx="6" stroke="#2563eb" stroke-width="2.5"/>
+                  <path d="M38 42l8 8M38 50l8-8" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="46" cy="46" r="10" stroke="#16a34a" stroke-width="2.5"/>
+                </svg>
+              </div>
+              <h3>三种录入方式</h3>
+              <div class="hl-steps">
+                <div class="hl-step">
+                  <div class="step-dot blue"></div>
+                  <div><strong>手动录入</strong>：逐字段填写，完整控制</div>
+                </div>
+                <div class="hl-step">
+                  <div class="step-dot green"></div>
+                  <div><strong>Excel批量导入</strong>：按模板整理后一次性上传</div>
+                </div>
+                <div class="hl-step">
+                  <div class="step-dot orange"></div>
+                  <div><strong>PDF扫描识别</strong>：上传合同PDF自动提取字段</div>
+                </div>
+                <div class="hl-step">
+                  <div class="step-dot purple"></div>
+                  <div><strong>VIP系统同步</strong>：企业系统自动推送合同数据</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hl-panel" data-idx="1">
+              <div class="hl-panel-icon" style="background:#f0fdf4">
+                <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
+                  <rect x="8" y="8" width="22" height="22" rx="5" stroke="#16a34a" stroke-width="2.5"/>
+                  <rect x="34" y="8" width="22" height="22" rx="5" stroke="#16a34a" stroke-width="2.5"/>
+                  <rect x="8" y="34" width="22" height="22" rx="5" stroke="#16a34a" stroke-width="2.5"/>
+                  <rect x="34" y="34" width="22" height="22" rx="5" stroke="#d97706" stroke-width="2.5"/>
+                  <path d="M40 46l4 4 8-8" stroke="#d97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3>全局数据看板</h3>
+              <div class="hl-metrics">
+                <div class="hl-metric"><span class="metric-v blue">128</span><span class="metric-l">合同总数</span></div>
+                <div class="hl-metric"><span class="metric-v green">¥1248万</span><span class="metric-l">合同总额</span></div>
+                <div class="hl-metric"><span class="metric-v orange">79.1%</span><span class="metric-l">回款率</span></div>
+                <div class="hl-metric"><span class="metric-v purple">5条</span><span class="metric-l">待处理提醒</span></div>
+              </div>
+            </div>
+
+            <div class="hl-panel active-default" data-idx="2">
+              <div class="hl-panel-icon" style="background:#f0f9ff">
+                <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
+                  <rect x="8" y="18" width="30" height="22" rx="5" stroke="#0ea5e9" stroke-width="2.5"/>
+                  <path d="M8 26l15 9 15-9" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M34 16l8-8M42 8l-4 0M42 8l0 4" stroke="#9333ea" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="32" y="18" width="24" height="16" rx="4" fill="#9333ea" opacity=".15" stroke="#9333ea" stroke-width="2"/>
+                  <path d="M36 26l3 3 6-6" stroke="#9333ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 50h44M18 44v6M30 40v10M42 44v6" stroke="#0ea5e9" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>短信 + 邮件双引擎</h3>
+              <div class="hl-flow">
+                <div class="flow-step">
+                  <div class="flow-icon sms">短信</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-icon ai">AI解析</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-icon match">匹配合同</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-icon done">自动入账</div>
+                </div>
+                <div class="flow-step" style="margin-top:10px">
+                  <div class="flow-icon email">邮件</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-icon ai">读取发票</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-icon match">关联合同</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-icon done">自动记录</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hl-panel" data-idx="3">
+              <div class="hl-panel-icon" style="background:#f5f3ff">
+                <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
+                  <path d="M10 54V30l12-8 12 6 12-12v38" stroke="#7c3aed" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="14" y="36" width="8" height="18" rx="2" fill="#7c3aed" opacity=".3" stroke="#7c3aed" stroke-width="2"/>
+                  <rect x="28" y="28" width="8" height="26" rx="2" fill="#7c3aed" opacity=".5" stroke="#7c3aed" stroke-width="2"/>
+                  <rect x="42" y="20" width="8" height="34" rx="2" fill="#7c3aed" stroke="#7c3aed" stroke-width="2"/>
+                </svg>
+              </div>
+              <h3>多维报表统计</h3>
+              <div class="hl-report-tags">
+                <span class="r-tag">销售合同报表</span>
+                <span class="r-tag">采购合同报表</span>
+                <span class="r-tag">客户档案查询</span>
+                <span class="r-tag">月/季/年统计</span>
+                <span class="r-tag">Excel导出</span>
+                <span class="r-tag">只读安全模式</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 小程序端 ===== -->
+  <section class="miniapp" id="miniapp">
+    <div class="miniapp-bg">
+      <div class="miniapp-blob"></div>
+    </div>
+    <div class="container miniapp-inner">
+      <div class="miniapp-text">
+        <div class="section-label light">小程序端</div>
+        <h2 class="section-title light">老板随时随地<br>掌握合同动态</h2>
+        <p class="section-desc light">无需打开电脑，企业老板和管理员通过微信小程序即可实时查看合同详情、资金回款与开票情况，滚动提醒确保关键事项不错过。</p>
+
+        <div class="miniapp-features">
+          <div class="mini-feat">
+            <div class="mini-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div>
+              <strong>合同统计总览</strong>
+              <p>合同数量、金额、续签情况一屏展示</p>
+            </div>
+          </div>
+          <div class="mini-feat">
+            <div class="mini-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <strong>回款情况</strong>
+              <p>实时查看已回款、待回款、逾期金额</p>
+            </div>
+          </div>
+          <div class="mini-feat">
+            <div class="mini-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <div>
+              <strong>开票情况</strong>
+              <p>已开票金额、待开票合同一目了然</p>
+            </div>
+          </div>
+          <div class="mini-feat">
+            <div class="mini-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <strong>滚动提醒</strong>
+              <p>开票提醒、续签提醒、逾期提醒推送</p>
+            </div>
+          </div>
+          <div class="mini-feat">
+            <div class="mini-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <div>
+              <strong>可视化图表</strong>
+              <p>月度/年度合同趋势图精简呈现</p>
+            </div>
+          </div>
+          <div class="mini-feat">
+            <div class="mini-feat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <strong>个人中心</strong>
+              <p>待办事项、个人信息与权限管理</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="miniapp-phones">
+        <!-- 主手机 -->
+        <div class="phone-wrap main-phone">
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="mini-screen">
+                <div class="mini-header">
+                  <div class="mini-title">合同管理</div>
+                  <div class="mini-date">2026.06</div>
+                </div>
+                <div class="mini-stats-row">
+                  <div class="mini-stat b"><div class="mini-stat-n">128</div><div class="mini-stat-l">合同数</div></div>
+                  <div class="mini-stat g"><div class="mini-stat-n">¥1248万</div><div class="mini-stat-l">合同额</div></div>
+                </div>
+                <div class="mini-stats-row">
+                  <div class="mini-stat o"><div class="mini-stat-n">¥986万</div><div class="mini-stat-l">已回款</div></div>
+                  <div class="mini-stat p"><div class="mini-stat-n">¥762万</div><div class="mini-stat-l">已开票</div></div>
+                </div>
+                <div class="mini-chart-area">
+                  <div class="mini-bar-row">
+                    <div class="mini-bar" style="height:50%"></div>
+                    <div class="mini-bar" style="height:65%"></div>
+                    <div class="mini-bar" style="height:45%"></div>
+                    <div class="mini-bar" style="height:82%"></div>
+                    <div class="mini-bar" style="height:58%"></div>
+                    <div class="mini-bar active" style="height:95%"></div>
+                  </div>
+                </div>
+                <div class="mini-remind-header">待处理提醒</div>
+                <div class="mini-remind-item r">
+                  <div class="mini-remind-dot red"></div>
+                  <div class="mini-remind-text">HT2026-035 待开票</div>
+                </div>
+                <div class="mini-remind-item">
+                  <div class="mini-remind-dot orange"></div>
+                  <div class="mini-remind-text">HT2026-012 合同续签</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 副手机 -->
+        <div class="phone-wrap sub-phone">
+          <div class="phone-frame small">
+            <div class="phone-notch small"></div>
+            <div class="phone-screen">
+              <div class="mini-screen small">
+                <div class="mini-header small">
+                  <div class="mini-title small">合同详情</div>
+                </div>
+                <div class="mini-detail-card">
+                  <div class="mini-detail-row">
+                    <span class="mdr-l">合同编号</span>
+                    <span class="mdr-v blue">HT2026-013</span>
+                  </div>
+                  <div class="mini-detail-row">
+                    <span class="mdr-l">合同金额</span>
+                    <span class="mdr-v">¥480,000</span>
+                  </div>
+                  <div class="mini-detail-row">
+                    <span class="mdr-l">已回款</span>
+                    <span class="mdr-v green">¥96,000</span>
+                  </div>
+                  <div class="mini-detail-row">
+                    <span class="mdr-l">状态</span>
+                    <span class="mdr-v">
+                      <span class="mini-status-tag">执行中</span>
+                    </span>
+                  </div>
+                  <div class="mini-detail-row">
+                    <span class="mdr-l">结束日期</span>
+                    <span class="mdr-v">2026-12-31</span>
+                  </div>
+                </div>
+                <div class="mini-progress">
+                  <div class="mini-progress-label">
+                    <span>回款进度</span>
+                    <span class="orange">20%</span>
+                  </div>
+                  <div class="mini-progress-bar">
+                    <div class="mini-progress-fill" style="width:20%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 数据统计 ===== -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">数据说话</div>
+        <h2 class="section-title">值得信赖的数字</h2>
+      </div>
+      <div class="stats-boxes">
+        <div class="stat-box">
+          <div class="stat-box-num" data-target="500">0</div>
+          <div class="stat-box-unit">+</div>
+          <div class="stat-box-label">企业用户</div>
+          <div class="stat-box-desc">覆盖建设、服务、贸易等多行业</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num" data-target="12">0</div>
+          <div class="stat-box-unit">万+</div>
+          <div class="stat-box-label">合同管理量</div>
+          <div class="stat-box-desc">每年持续增长 30%</div>
+        </div>
+        <div class="stat-box highlight">
+          <div class="stat-box-num" data-target="80">0</div>
+          <div class="stat-box-unit">%</div>
+          <div class="stat-box-label">财务效率提升</div>
+          <div class="stat-box-desc">短信+邮件自动化带来的效率提升</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num" data-target="99">0</div>
+          <div class="stat-box-unit">.9%</div>
+          <div class="stat-box-label">数据准确率</div>
+          <div class="stat-box-desc">多重校验机制保障数据质量</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num" data-target="24">0</div>
+          <div class="stat-box-unit">h</div>
+          <div class="stat-box-label">全天候运行</div>
+          <div class="stat-box-desc">云端部署，随时随地访问</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 使用流程 ===== -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">使用流程</div>
+        <h2 class="section-title">5分钟快速上手</h2>
+        <p class="section-desc">无需复杂培训，按步骤操作即可完成系统配置并开始使用</p>
+      </div>
+      <div class="steps-flow">
+        <div class="step-item">
+          <div class="step-circle" style="background: #eff6ff; color: #2563eb;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="step-line"></div>
+          <h4>注册企业账号</h4>
+          <p>填写企业基本信息，完善纳税号、开户行等关键数据</p>
+        </div>
+        <div class="step-item">
+          <div class="step-circle" style="background: #f0fdf4; color: #16a34a;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+          </div>
+          <div class="step-line"></div>
+          <h4>录入合同数据</h4>
+          <p>手动填写、批量导入或PDF识别，快速完成历史合同迁移</p>
+        </div>
+        <div class="step-item">
+          <div class="step-circle" style="background: #fffbeb; color: #d97706;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div class="step-line"></div>
+          <h4>授权短信/邮箱</h4>
+          <p>一次授权，系统自动接管汇款短信和发票邮件处理</p>
+        </div>
+        <div class="step-item">
+          <div class="step-circle" style="background: #f0f9ff; color: #0ea5e9; border: 2px solid #0ea5e9;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h4>开始高效运转</h4>
+          <p>全流程自动化运行，管理层专注业务决策</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 价格方案 ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">方案定价</div>
+        <h2 class="section-title">选择适合您的方案</h2>
+        <p class="section-desc">核心区别在于自动化程度，功能按需升级</p>
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="pricing-plan">免费版</div>
+          <div class="pricing-price">
+            <span class="price-num" style="font-size:36px;font-weight:800;color:var(--success)">永久免费</span>
+          </div>
+          <div class="price-desc">基础功能全开放，企业管理员手动操作</div>
+          <ul class="price-features">
+            <li class="has">合同录入与管理（含PDF识别）</li>
+            <li class="has">客户档案管理</li>
+            <li class="has">资金管理（手动登记）</li>
+            <li class="has">发票管理（手动上传）</li>
+            <li class="has">报表统计</li>
+            <li class="has">不限系统用户数</li>
+            <li class="no">短信自动识别收款</li>
+            <li class="no">邮件自动关联发票</li>
+            <li class="no">小程序端</li>
+          </ul>
+          <a href="#contact" class="btn-price">免费开始使用</a>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="featured-badge">推荐</div>
+          <div class="pricing-plan">会员版</div>
+          <div class="pricing-price-member">
+            <span class="member-label">全自动 · 更高效</span>
+            <span class="member-contact"><a href="#contact">联系我们了解详情 →</a></span>
+          </div>
+          <div class="price-desc">AI自动化替代人工重复操作，释放管理精力</div>
+          <ul class="price-features">
+            <li class="has">免费版全部功能</li>
+            <li class="has highlight-feat">✨ 短信自动识别收款（无需手动登记）</li>
+            <li class="has highlight-feat">✨ 邮件自动关联发票（无需手动上传）</li>
+            <li class="has highlight-feat">微信小程序端（随时查看）</li>
+            <li class="has">企业系统数据同步（API）</li>
+            <li class="has">数据可视化增强版</li>
+            <li class="has">专属客服支持</li>
+          </ul>
+          <a href="#contact" class="btn-price featured">联系开通会员</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 客户评价 ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">客户心声</div>
+        <h2 class="section-title">他们都在用 零票通Ai</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"短信自动识别功能真的太实用了！以前每天要手动核对银行流水，现在系统自动帮我匹配，财务工作量减少了一半以上。"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:#eff6ff;color:#2563eb">陈</div>
+            <div>
+              <div class="testi-name">陈总监</div>
+              <div class="testi-company">财务总监</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card featured">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"小程序端非常方便，出差时打开手机就能看到公司所有合同的回款进度。合同续签提醒让我们从未错过任何一笔续签机会。"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:#2563eb;color:#fff">张</div>
+            <div>
+              <div class="testi-name">张老板</div>
+              <div class="testi-company">董事长</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"发票邮件自动关联合同，彻底解决了我们销售发票对账混乱的问题。以前靠Excel管理100多份合同太痛苦了，现在清晰多了。"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:#f0fdf4;color:#16a34a">李</div>
+            <div>
+              <div class="testi-name">李主任</div>
+              <div class="testi-company">合同部主任</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / 联系 ===== -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg">
+      <div class="cta-blob"></div>
+    </div>
+    <div class="container cta-inner">
+      <h2>准备好提升合同管理效率了吗？</h2>
+      <p>免费版永久可用，会员版解锁自动化功能</p>
+      <div class="cta-form">
+        <input type="text" placeholder="您的姓名" class="cta-input">
+        <input type="text" placeholder="公司名称" class="cta-input">
+        <input type="tel" placeholder="手机号码" class="cta-input">
+        <button class="cta-submit" onclick="ctaSubmit()">免费申请试用</button>
+      </div>
+      <p class="cta-hint">或者 <a href="contract-management/index.html" target="_blank">直接体验在线演示系统 →</a></p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="10" fill="#2563eb"/>
+            <path d="M9 11h18M9 18h12M9 25h14" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="26" cy="25" r="5" fill="white" opacity=".95"/>
+            <path d="M24 25l1.5 1.5L28 23" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span style="color:#fff;font-weight:700;font-size:16px">零票通Ai</span>
+        </div>
+        <p class="footer-tagline">企业合同全生命周期智能管理平台</p>
+        <div class="footer-social">
+          <a href="#" title="微信公众号">微信</a>
+          <a href="#" title="官方邮箱">邮件</a>
+          <a href="#" title="客服电话">电话</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>产品</h5>
+          <a href="#features">核心功能</a>
+          <a href="#highlights">产品亮点</a>
+          <a href="#miniapp">小程序端</a>
+          <a href="#pricing">定价方案</a>
+        </div>
+        <div class="footer-col">
+          <h5>解决方案</h5>
+          <a href="#">建筑工程行业</a>
+          <a href="#">贸易服务行业</a>
+          <a href="#">房地产行业</a>
+          <a href="#">IT科技行业</a>
+        </div>
+        <div class="footer-col">
+          <h5>支持</h5>
+          <a href="#">使用文档</a>
+          <a href="#">API接口</a>
+          <a href="#">帮助中心</a>
+          <a href="#">联系客服</a>
+        </div>
+        <div class="footer-col">
+          <h5>联系我们</h5>
+          <a href="#">400-000-0000</a>
+          <a href="#">support@lingpiaotong.cn</a>
+          <a href="#">工作日 9:00-18:00</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2026 零票通Ai. 保留所有权利</span>
+        <span>隐私政策 · 服务条款</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== 右侧固定联系方式 ===== -->
+  <div class="side-contact" id="sideContact">
+    <!-- 电话按钮 -->
+    <a href="tel:400-000-0000" class="sc-btn sc-btn-phone" title="拨打客服电话">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span class="sc-btn-label">电话</span>
+    </a>
+    <!-- 微信按钮 -->
+    <div class="sc-btn sc-btn-wechat" onclick="toggleWechatQR()" title="客服微信">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="sc-btn-label">微信</span>
+    </div>
+    <!-- 微信二维码弹窗 -->
+    <div class="sc-qrcode-popup" id="scQrcodePopup">
+      <div class="sc-qrcode-header">
+        <span>扫码添加客服微信</span>
+        <button class="sc-qrcode-close" onclick="toggleWechatQR()">×</button>
+      </div>
+      <div class="sc-qrcode-body">
+        <div class="sc-qrcode-img">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <!-- 二维码外框 -->
+            <rect x="4" y="4" width="112" height="112" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+            <!-- 左上角定位点 -->
+            <rect x="12" y="12" width="28" height="28" rx="4" fill="none" stroke="#1e293b" stroke-width="4"/>
+            <rect x="18" y="18" width="16" height="16" rx="2" fill="#1e293b"/>
+            <!-- 右上角定位点 -->
+            <rect x="80" y="12" width="28" height="28" rx="4" fill="none" stroke="#1e293b" stroke-width="4"/>
+            <rect x="86" y="18" width="16" height="16" rx="2" fill="#1e293b"/>
+            <!-- 左下角定位点 -->
+            <rect x="12" y="80" width="28" height="28" rx="4" fill="none" stroke="#1e293b" stroke-width="4"/>
+            <rect x="18" y="86" width="16" height="16" rx="2" fill="#1e293b"/>
+            <!-- 模拟数据区域 -->
+            <rect x="46" y="14" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="56" y="14" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="66" y="14" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="46" y="24" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="58" y="24" width="10" height="6" rx="1" fill="#1e293b"/>
+            <rect x="46" y="34" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="56" y="34" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="66" y="34" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="14" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="24" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="34" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="46" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="56" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="68" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="80" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="90" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="100" y="46" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="14" y="56" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="26" y="56" width="10" height="6" rx="1" fill="#1e293b"/>
+            <rect x="42" y="56" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="54" y="56" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="66" y="56" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="78" y="56" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="90" y="56" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="102" y="56" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="14" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="24" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="36" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="48" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="60" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="72" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="84" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="96" y="66" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="14" y="76" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="26" y="76" width="10" height="6" rx="1" fill="#1e293b"/>
+            <rect x="44" y="76" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="56" y="76" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="68" y="76" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="82" y="76" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="94" y="76" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="46" y="86" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="56" y="86" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="68" y="86" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="80" y="86" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="92" y="86" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="46" y="96" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="58" y="96" width="10" height="6" rx="1" fill="#1e293b"/>
+            <rect x="74" y="96" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="86" y="96" width="6" height="6" rx="1" fill="#1e293b"/>
+            <rect x="98" y="96" width="6" height="6" rx="1" fill="#1e293b"/>
+          </svg>
+        </div>
+        <div class="sc-qrcode-info">
+          <div class="sc-qrcode-id">lingpiaotong_kf</div>
+          <div class="sc-qrcode-hint">微信扫一扫 · 添加客服</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="landing.js"></script>
+</body>
+</html>
